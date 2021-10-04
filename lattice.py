@@ -20,4 +20,4 @@ for i in range(0,23):
  call("echo " +s+ ">>"+fn, shell=True)
  s="run 3000 "
  call("echo " +s+ ">>"+fn, shell=True)
- call("time mpirun -np 2 lmp_openmpi -sf opt < "+fn, shell=True)
+ call("time mpirun -np 2 /usr/local/Cellar/lammps/2021-09-29/bin/lmp_mpi -sf opt < "+fn, shell=True)
